@@ -21,5 +21,10 @@ pipeline {
                 }
             }
         }
+        stage('deliver koppula'){
+            steps{
+                sh 'scripts/deliver.sh'
+            }
+        }
     }
 }
